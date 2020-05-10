@@ -68,5 +68,28 @@ contract("PikaSwap", ([deployer, investor]) => {
       assert.equal(event.rate.toString(), "100");
     });
   });
+
+  describe("sellTokens()", async () => {
+    let result;
+
+    before(async () => {
+      //Need investor to approve the purchse
+      await token.approve(pikaSwap.address, tokens("100"), { from: investor });
+      result = await pikaSwap.sellTokens(tokens("100"), { from: investor });
+    });
+
+    it("Allow user to sell token to exchange", async () => {
+      //Check Investor balance
+      let investorBalance = await token.balanceOf(investor);
+      assert.equal(investorBalance.toString(), tokens("0"));
+
+      // Check exchange balance
+      let pikaSwapBalance;
+      pikaSwapBalance = await token.balanceOf(pikaSwap.address);
+      assert.equal(pikaSwapBalance.toString(), tokens("1000000"));
+      pikaSwapBalance = await web3.eth.getBalance(pikaSwap.address);
+      assert.equal(pikaSwapBalance.toString(), web3.utils.toWei("0", "Ether"));
+    });
+  });
   //
 });

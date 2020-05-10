@@ -7,7 +7,14 @@ contract PikaSwap {
     Token public token;
     uint256 public exchangeRate = 100;
 
-    event TokenPurchased(
+    event TokensPurchased(
+        address account,
+        address token,
+        uint256 amount,
+        uint256 rate
+    );
+
+    event TokensSold(
         address account,
         address token,
         uint256 amount,
@@ -26,15 +33,32 @@ contract PikaSwap {
         // Make sure exchange have token
         require(token.balanceOf(address(this)) >= tokenAmount);
 
+        //perform purchase
         token.transfer(msg.sender, tokenAmount);
 
         //Emit purchase envent
-        emit TokenPurchased(
+        emit TokensPurchased(
             msg.sender,
             address(token),
             tokenAmount,
             exchangeRate
         );
+    }
+
+    function sellTokens(uint256 _amount) public {
+        require(token.balanceOf(msg.sender) >= _amount);
+
+        // Calculate the amount of Ether to redeem
+        uint256 etherAmount = _amount / exchangeRate;
+
+        require(address(this).balance >= etherAmount);
+
+        // Perform sale need 'approve function' for "transferFrom"
+        token.transferFrom(msg.sender, address(this), _amount);
+        msg.sender.transfer(etherAmount);
+
+        // Emit an event
+        emit TokensSold(msg.sender, address(token), _amount, exchangeRate);
     }
 
     //
