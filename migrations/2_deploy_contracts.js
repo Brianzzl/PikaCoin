@@ -7,7 +7,7 @@ module.exports = async function(deployer) {
   await deployer.deploy(Token);
   const token = await Token.deployed();
 
-  await deployer.deploy(PikaSwap);
+  await deployer.deploy(PikaSwap, token.address);
   const pikaSwap = await PikaSwap.deployed();
 
   //Transfer all token to PikaSwap

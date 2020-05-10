@@ -9,12 +9,12 @@ function tokens(n) {
   return web3.utils.toWei(n, "ether");
 }
 
-contract("PikaSwap", (accounts) => {
+contract("PikaSwap", ([deployer, investor]) => {
   let token, pikaSwap;
 
   before(async () => {
     token = await Token.new();
-    pikaSwap = await PikaSwap.new();
+    pikaSwap = await PikaSwap.new(token.address);
     // Transfer all tokens to PikaSwap (1 million)
     await token.transfer(pikaSwap.address, tokens("1000000"));
   });
@@ -38,5 +38,35 @@ contract("PikaSwap", (accounts) => {
     });
   });
 
+  describe("buyTokens()", async () => {
+    let result;
+
+    before(async () => {
+      result = await pikaSwap.buyTokens({
+        from: investor,
+        value: web3.utils.toWei("1", "ether"),
+      });
+    });
+
+    it("Allow user to buy 100 token with 1 ether", async () => {
+      //Check Investor balance
+      let investorBalance = await token.balanceOf(investor);
+      assert.equal(investorBalance.toString(), tokens("100"));
+
+      // Check exchange balance
+      let pikaSwapBalance;
+      pikaSwapBalance = await token.balanceOf(pikaSwap.address);
+      assert.equal(pikaSwapBalance.toString(), tokens("999900"));
+      pikaSwapBalance = await web3.eth.getBalance(pikaSwap.address);
+      assert.equal(pikaSwapBalance.toString(), web3.utils.toWei("1", "Ether"));
+
+      // console.log(result.logs[0]);
+      const event = result.logs[0].args;
+      assert.equal(event.account, investor);
+      assert.equal(event.token, token.address);
+      assert.equal(event.amount.toString(), tokens("100").toString());
+      assert.equal(event.rate.toString(), "100");
+    });
+  });
   //
 });
