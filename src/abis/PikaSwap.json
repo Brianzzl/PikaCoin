@@ -17,12 +17,12 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/captainpangpang/Desktop/newPikaCoin/PikaCoin/src/contracts/PikaSwap.sol\":\"PikaSwap\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/captainpangpang/Desktop/newPikaCoin/PikaCoin/src/contracts/PikaSwap.sol\":{\"keccak256\":\"0x56170710ec58613b5dbcb766f4787f5a5b2bd3a98584f0f6d45e678de4f83184\",\"urls\":[\"bzz-raw://43a4ec98ccfb09035cc890dc3256fcf35183cfe90efa070453c345339a2ca04e\",\"dweb:/ipfs/Qme5FNhGPpfgxjRm5uSnWEdWFjM83aZY3NzArgaCun14Vg\"]}},\"version\":1}",
-  "bytecode": "0x60806040526040518060400160405280601c81526020017f2050696b616368696c6c20506f6b65636f696e2045786368616e6765000000008152506000908051906020019061004f929190610062565b5034801561005c57600080fd5b50610107565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100a357805160ff19168380011785556100d1565b828001600101855582156100d1579182015b828111156100d05782518255916020019190600101906100b5565b5b5090506100de91906100e2565b5090565b61010491905b808211156101005760008160009055506001016100e8565b5090565b90565b610186806101166000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c806306fdde0314610030575b600080fd5b6100386100b3565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561007857808201518184015260208101905061005d565b50505050905090810190601f1680156100a55780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101495780601f1061011e57610100808354040283529160200191610149565b820191906000526020600020905b81548152906001019060200180831161012c57829003601f168201915b50505050508156fea265627a7a72315820e767224b7d0df56b2bea2fa2b0768f01735c0bf90cd2c5a51480039a85e1cb2864736f6c63430005100032",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c806306fdde0314610030575b600080fd5b6100386100b3565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561007857808201518184015260208101905061005d565b50505050905090810190601f1680156100a55780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101495780601f1061011e57610100808354040283529160200191610149565b820191906000526020600020905b81548152906001019060200180831161012c57829003601f168201915b50505050508156fea265627a7a72315820e767224b7d0df56b2bea2fa2b0768f01735c0bf90cd2c5a51480039a85e1cb2864736f6c63430005100032",
-  "sourceMap": "27:78:1:-;;;51:51;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;27:78;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:78:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
-  "deployedSourceMap": "27:78:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:78:1;;;;;;;;;;;;;;;;;;;51:51;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;51:51:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity >=0.5.0;\n\n\ncontract PikaSwap {\n    string public name = \" Pikachill Pokecoin Exchange\";\n}\n",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/captainpangpang/Desktop/newPikaCoin/PikaCoin/src/contracts/PikaSwap.sol\":\"PikaSwap\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/captainpangpang/Desktop/newPikaCoin/PikaCoin/src/contracts/PikaSwap.sol\":{\"keccak256\":\"0xaae12235611f64a0539ce0c6f0f2b29803cf778f18c8f946b888be49d10df1c1\",\"urls\":[\"bzz-raw://67112107adb457013dff7ff64779cd04fa016497060b1c8c3c18a93d3fb60118\",\"dweb:/ipfs/QmdEXRM6vmjquzAVUdx47qvqSwDqxeChG8osS9BwHsZHBE\"]}},\"version\":1}",
+  "bytecode": "0x60806040526040518060400160405280601b81526020017f50696b616368696c6c20506f6b65636f696e2045786368616e676500000000008152506000908051906020019061004f929190610062565b5034801561005c57600080fd5b50610107565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100a357805160ff19168380011785556100d1565b828001600101855582156100d1579182015b828111156100d05782518255916020019190600101906100b5565b5b5090506100de91906100e2565b5090565b61010491905b808211156101005760008160009055506001016100e8565b5090565b90565b610186806101166000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c806306fdde0314610030575b600080fd5b6100386100b3565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561007857808201518184015260208101905061005d565b50505050905090810190601f1680156100a55780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101495780601f1061011e57610100808354040283529160200191610149565b820191906000526020600020905b81548152906001019060200180831161012c57829003601f168201915b50505050508156fea265627a7a72315820832290553d34be4a80c822a72836490fb69aa2dc4c61c4e5f422f7cfc8aacfc564736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c806306fdde0314610030575b600080fd5b6100386100b3565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561007857808201518184015260208101905061005d565b50505050905090810190601f1680156100a55780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101495780601f1061011e57610100808354040283529160200191610149565b820191906000526020600020905b81548152906001019060200180831161012c57829003601f168201915b50505050508156fea265627a7a72315820832290553d34be4a80c822a72836490fb69aa2dc4c61c4e5f422f7cfc8aacfc564736f6c63430005100032",
+  "sourceMap": "27:77:1:-;;;51:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;27:77;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:77:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "27:77:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:77:1;;;;;;;;;;;;;;;;;;;51:50;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;51:50:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity >=0.5.0;\n\n\ncontract PikaSwap {\n    string public name = \"Pikachill Pokecoin Exchange\";\n}\n",
   "sourcePath": "/Users/captainpangpang/Desktop/newPikaCoin/PikaCoin/src/contracts/PikaSwap.sol",
   "ast": {
     "absolutePath": "/Users/captainpangpang/Desktop/newPikaCoin/PikaCoin/src/contracts/PikaSwap.sol",
@@ -64,7 +64,7 @@
             "name": "name",
             "nodeType": "VariableDeclaration",
             "scope": 62,
-            "src": "51:51:1",
+            "src": "51:50:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -83,7 +83,7 @@
             },
             "value": {
               "argumentTypes": null,
-              "hexValue": "2050696b616368696c6c20506f6b65636f696e2045786368616e6765",
+              "hexValue": "50696b616368696c6c20506f6b65636f696e2045786368616e6765",
               "id": 60,
               "isConstant": false,
               "isLValue": false,
@@ -91,22 +91,22 @@
               "kind": "string",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "72:30:1",
+              "src": "72:29:1",
               "subdenomination": null,
               "typeDescriptions": {
-                "typeIdentifier": "t_stringliteral_2bd5f71683effba40c1e853193afdc4af627192f3f71f0f1a8ea9b5271fc3ae6",
-                "typeString": "literal_string \" Pikachill Pokecoin Exchange\""
+                "typeIdentifier": "t_stringliteral_e6211ba1c58b85a9f3efe1b1ae7c4cfc0408d92c55eee810a1fcb25c30471f5f",
+                "typeString": "literal_string \"Pikachill Pokecoin Exchange\""
               },
-              "value": " Pikachill Pokecoin Exchange"
+              "value": "Pikachill Pokecoin Exchange"
             },
             "visibility": "public"
           }
         ],
         "scope": 63,
-        "src": "27:78:1"
+        "src": "27:77:1"
       }
     ],
-    "src": "0:106:1"
+    "src": "0:105:1"
   },
   "legacyAST": {
     "absolutePath": "/Users/captainpangpang/Desktop/newPikaCoin/PikaCoin/src/contracts/PikaSwap.sol",
@@ -148,7 +148,7 @@
             "name": "name",
             "nodeType": "VariableDeclaration",
             "scope": 62,
-            "src": "51:51:1",
+            "src": "51:50:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -167,7 +167,7 @@
             },
             "value": {
               "argumentTypes": null,
-              "hexValue": "2050696b616368696c6c20506f6b65636f696e2045786368616e6765",
+              "hexValue": "50696b616368696c6c20506f6b65636f696e2045786368616e6765",
               "id": 60,
               "isConstant": false,
               "isLValue": false,
@@ -175,22 +175,22 @@
               "kind": "string",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "72:30:1",
+              "src": "72:29:1",
               "subdenomination": null,
               "typeDescriptions": {
-                "typeIdentifier": "t_stringliteral_2bd5f71683effba40c1e853193afdc4af627192f3f71f0f1a8ea9b5271fc3ae6",
-                "typeString": "literal_string \" Pikachill Pokecoin Exchange\""
+                "typeIdentifier": "t_stringliteral_e6211ba1c58b85a9f3efe1b1ae7c4cfc0408d92c55eee810a1fcb25c30471f5f",
+                "typeString": "literal_string \"Pikachill Pokecoin Exchange\""
               },
-              "value": " Pikachill Pokecoin Exchange"
+              "value": "Pikachill Pokecoin Exchange"
             },
             "visibility": "public"
           }
         ],
         "scope": 63,
-        "src": "27:78:1"
+        "src": "27:77:1"
       }
     ],
-    "src": "0:106:1"
+    "src": "0:105:1"
   },
   "compiler": {
     "name": "solc",
@@ -200,12 +200,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xBd9ec96CFD71C157CA1cCB576a9BBd0524fA5d07",
-      "transactionHash": "0x884cc0c4853180b4a298169e365d77624bd2c2e9de8744f15812030516295a7d"
+      "address": "0xF6a8AE5F0C1c2D5e987ccfF99cc46Db86aECA280",
+      "transactionHash": "0xbd4f16b087a7bb1aabf871c1d2b51db2ba4934cfd15e46bb228fa528a3af37f6"
     }
   },
   "schemaVersion": "3.1.0",
-  "updatedAt": "2020-05-09T21:24:25.405Z",
+  "updatedAt": "2020-05-10T00:32:21.391Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
