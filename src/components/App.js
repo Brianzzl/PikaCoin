@@ -85,10 +85,18 @@ class App extends Component {
     };
   }
 
-
+  buyTokens = (etherAmount) => {
+    this.setState({ loading: true });
+    this.state.pikaSwap.methods
+      .buyTokens()
+      .send({ value: etherAmount, from: this.state.account })
+      .on("transactionHash", (hash) => {
+        this.setState({ loading: false });
+      });
+  };
 
   render() {
-
+    // console.log(this.state);
     let content;
 
     if (this.state.loading) {
@@ -99,9 +107,12 @@ class App extends Component {
       );
     } else {
       content = (
-        <p >
-          pikaexchange
-        </p>
+        <Main
+          ethBalance={this.state.ethBalance}
+          tokenBalance={this.state.tokenBalance}
+          buyTokens={this.buyTokens}
+        />
+      );
     }
     return (
       <div>
