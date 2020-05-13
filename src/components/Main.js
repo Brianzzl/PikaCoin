@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import BuyForm from "./BuyForm";
-// import SellForm from "./SellForm";
+import SellForm from "./SellForm";
 
 class Main extends Component {
   constructor(props) {
@@ -18,6 +18,14 @@ class Main extends Component {
           ethBalance={this.props.ethBalance}
           tokenBalance={this.props.tokenBalance}
           buyTokens={this.props.buyTokens}
+        />
+      );
+    } else {
+      content = (
+        <SellForm
+          ethBalance={this.props.ethBalance}
+          tokenBalance={this.props.tokenBalance}
+          sellTokens={this.props.sellTokens}
         />
       );
     }

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -33,7 +33,7 @@ export default function ButtonAppBar({ account }) {
             className={classes.menuButton}
             color='grey'
             aria-label='menu'>
-            <img src={pikachu} width='48' />
+            <img src={pikachu} alt='a Giant Pikachu' width='48' />
           </IconButton>
           <Typography variant='h6' className={classes.title}>
             Pikachu Coinbase
