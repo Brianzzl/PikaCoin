@@ -95,6 +95,21 @@ class App extends Component {
       });
   };
 
+  sellTokens = (tokenAmount) => {
+    this.setState({ loading: true });
+    this.state.token.methods
+      .approve(this.state.pikaSwap.address, tokenAmount)
+      .send({ from: this.state.account })
+      .on("transactionHash", (hash) => {
+        this.state.pikaSwap.methods
+          .sellTokens(tokenAmount)
+          .send({ from: this.state.account })
+          .on("transactionHash", (hash) => {
+            this.setState({ loading: false });
+          });
+      });
+  };
+
   render() {
     // console.log(this.state);
     let content;
@@ -111,6 +126,7 @@ class App extends Component {
           ethBalance={this.state.ethBalance}
           tokenBalance={this.state.tokenBalance}
           buyTokens={this.buyTokens}
+          sellTokens={this.sellTokens}
         />
       );
     }
